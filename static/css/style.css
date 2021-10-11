@@ -1,0 +1,173 @@
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  overflow-x: hidden;
+  background-color: #fffdd0;
+}
+
+/* NAVIGATION BAR */
+nav {
+  background-color: #86233f;
+  height: 13vh;
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  width: 100%;
+  border-radius: 0 0 10px 10px;
+  z-index: 2;
+}
+
+nav ul {
+  /* background-color: aqua; */
+  width: 50%;
+  height: 13vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  width: 80px;
+}
+
+nav ul li a {
+  color: white;
+  font-size: 17px;
+  font-weight: lighter;
+}
+
+nav ul li a:hover {
+  color: #b2b2b2;
+}
+
+/* MAIN */
+.main {
+  background-image: linear-gradient(
+      rgba(65, 65, 65, 0.5),
+      rgba(65, 65, 65, 0.5)
+    ),
+    url("../img/bg.jpg");
+  width: 100vw;
+  height: 88vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  top: 12vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.main .container {
+  /* background-color: teal; */
+  height: 50%;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.main h1,
+.main p,
+.main a {
+  position: relative;
+  /* top: -10vh; */
+  color: white;
+}
+
+.main h1 {
+  font-size: 50px;
+}
+
+.main p {
+  font-size: 22px;
+  opacity: 80%;
+}
+
+.main a {
+  background-color: #86233f;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  width: 17vw;
+  height: 8vh;
+  border-radius: 10px;
+  transition: 400ms;
+}
+
+.main a img {
+  opacity: 0;
+  width: 25px;
+  position: absolute;
+}
+
+.main a:hover {
+  width: 17vw;
+  height: 12vh;
+}
+
+.main a:hover img {
+  opacity: 100%;
+  position: relative;
+  transition: ease 1s;
+}
+/* MENU */
+.menu {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.menu h2 {
+  margin-bottom: 50px;
+  font-size: 40px;
+}
+
+.menu ul {
+  /* background-color: black; */
+  width: 80vw;
+  height: 280px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.menu ul li {
+  height: 10vh;
+  width: 10vw;
+  background-color: #86233f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+
+.menu ul li a {
+  color: white;
+  font-size: 22px;
+  /* background-color: aquamarine; */
+  text-align: center;
+  width: 100%;
+  padding-top: 25%;
+  padding-bottom: 25%;
+}
