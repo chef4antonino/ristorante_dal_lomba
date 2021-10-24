@@ -1,76 +1,70 @@
-<html style="width: 100%; height:100%; border: 0; margin: 0; background-color: #fffdd0;">
+<html>
 	<head>
 		<meta charset="UTF-8">
 		<title> Gnocchi al Ragù - Ita </title>
+		<link rel="stylesheet" href="./static/css/overall.css" />
+		<style>
+		 	#btn_index:hover {
+				border-radius: 10px;
+				background-color: #bf395f;
+		 	}
+			header {
+				display: flex; 
+				align-items: center; 
+			 	justify-items: center; 
+			 	justify-content: space-between; 
+				background-color: #86233f; 
+			 	width: 100%;
+			}
+		</style>
 	</head>
-	<style>
-	 * {
-		 border: 0; 
-		 margin: 0;
-		 text-decoration: none;
-	 }
-	 #btn_index:hover {
-		border-radius: 10px;
-		background-color: #bf395f;
-	 }
-	 header {
-		 display: flex; 
-		 align-items: center; 
-		 justify-items: center; 
-		 justify-content: space-between; 
-		 background-color: #86233f; 
-		 width: 100%;
-	 }
-	 ul {
-		list-style-type: none;
-	 }
-	</style>
+	
 	<body>
 		<header>
 			<a href="index.html"><h2 style="color: white; padding: 10px; margin: 5px" id="btn_index"> Dal Lomba</h2></a>
 			<div style="margin: 10px">
-				<a href="gnocchi_ita.html"><img src="static/img/ita.png" style="height: 40px; width: 40px"></a>
-				<a href="gnocchi_eng.html"><img src="static/img/eng.png" style="height: 40px; width: 40px"></a>
+				<a href="gnocchi_ita.html"><img src="static/img/ita.png" style="width: 40px"></a>
+				<a href="gnocchi_eng.html"><img src="static/img/eng.png" style="width: 40px"></a>
 			</div>
 		</header>
-		<section style="margin: 10px">
-		<h1 style="text-align: center;"> Gnocchi al Ragù d'Anatra</h1>
-		<img src="static/img/gnocchi.jpg" style="height: 300px; width: 400px">
-		<h2 style="text-align: center; margin: 20px 0 0 0"> Descrizione </h2>
-		<p style="width: 80%; margin: 20px">Gnocchi di patate al ragù d’anatra. Giovedì gnocchi…..Oggi di patate conditi con ragù d’anatra. 
-		Appena rosati da un nonnulla di concentrato di pomodoro e profumati con erbe aromatiche….. Molto 
-		appetitosi, delicatissimi….. La ricetta base degli gnocchi è qui ed è sempre la solita ricetta di 
-		famiglia…..infallibile…..</p>
-		<h2 style="text-align: center; "> Ingredienti </h2>
-		<div style="display: flex; justify-content: space-between; justify-items: center; width: 80%; margin-left: 10%;">
-			<div style="width: 50%;">
-				<h3 style="text-align: center; margin: 20px"> Gnocchi </h3>
-				<ul style="text-decoration: none">
-				 <li>1 Kg di Patate</li>
-				 <li>250 g di Farina 00</li>
-				 <li>1 uovo</li>
-				 <li>1 pizzico di sale</li>
-				</ul>
-			</div>
-			<div style="width: 50%;">
-				<h3 style="text-align: center; margin: 20px"> Sugo</h3>
-				<ul>
-				 <li>600 g di macinato d'anatra</li>
-				 <li>1 fegato d'anatra</li>
-				 <li>q.b. d'olio extravergine d'oliva</li>
-				 <li>3 cucchiaibattuto di sedano, carota, cipolla, aglio</li>
-				 <li>1 mazzetto aromatico (rosmarino, salvia, timo)</li>
-				 <li>1 foglia d'alloro</li>
-				 <li>2chiodi di garofano</li>
-				 <li>1 bicchierevino rosso (piuttosto corposo)</li>
-				 <li>1 cucchiainoconcentrato di pomodoro</li>
-				 <li>1 pizzicopepe nero</li>
-				 <li>q.b.sale</li>
-				</ul>
-			</div>
+		
+		<h1 class="title"> Gnocchi al Ragù d'Anatra</h1>
+		<img src="static/img/gnocchi.jpg" class="mainImage">
+		<h2 class="subtitle"> Descrizione </h2>
+		<div class="description">
+			<p >Gnocchi di patate al ragù d’anatra. Giovedì gnocchi…..Oggi di patate conditi con ragù d’anatra. 
+			Appena rosati da un nonnulla di concentrato di pomodoro e profumati con erbe aromatiche….. Molto 
+			appetitosi, delicatissimi….. La ricetta base degli gnocchi è qui ed è sempre la solita ricetta di 
+			famiglia…..infallibile…..</p>
+		</div>	
+		
+		<h2 class="subtitle"> Ingredienti </h2>
+		
+		<h3 class="subsubtitle"> Gnocchi </h3>
+		<div class="description">
+			<ul class="list">
+				<li>1 Kg di Patate</li>
+				<li>250 g di Farina 00</li>
+				<li>1 uovo</li>
+				<li>1 pizzico di sale</li>
+			</ul>
 		</div>
-		</section>
-		<footer>
-		</footer>
+		<h3 class="subsubtitle"> Sugo </h3>
+		<div class="description">
+			<ul class="list">
+				<li>600 g di macinato d'anatra</li>
+				<li>1 fegato d'anatra</li>
+				<li>q.b. d'olio extravergine d'oliva</li>
+				<li>3 cucchiaibattuto di sedano, carota, cipolla, aglio</li>
+				<li>1 mazzetto aromatico (rosmarino, salvia, timo)</li>
+				<li>1 foglia d'alloro</li>
+				<li>2chiodi di garofano</li>
+			 	<li>1 bicchierevino rosso (piuttosto corposo)</li>
+				<li>1 cucchiainoconcentrato di pomodoro</li>
+				<li>1 pizzicopepe nero</li>
+				<li>q.b.sale</li>
+			</ul>
+		</div>	
+		<br>	
 	</body>
 </html>
